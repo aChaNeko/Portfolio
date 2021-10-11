@@ -1,5 +1,275 @@
-/*
-Theme Name: オリジナルテーマ(TECH.I.S)
-*/
- 
-/*この下からCSSを書いてください*/
+/****************************************
+* リセットCSS
+*****************************************/
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,
+abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike,
+strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table,
+caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	font-size: 100%;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	letter-spacing: 1.5px;
+	line-height: 1.5;
+}
+img {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+}
+a {
+	text-decoration: none;
+}
+ol, ul {
+	list-style: none;
+}
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+/****************************************
+* フォント設定
+*****************************************/
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Shippori+Mincho&display=swap');
+/* 筆記体 */
+.ff_cursive {
+    font-family: 'Bonheur Royale', cursive;
+}
+/* 明朝体 */
+.ff_serif {
+    font-family: 'Shippori Mincho', serif;
+}
+
+/****************************************
+* ヘッダー
+*****************************************/
+.background-photo {
+    background-image: url(http://localhost/portfolio/wp-content/themes/techis_自作テーマ/img/paint2.jpeg);
+    height: 480px;
+    width: 100%;
+    position: relative;
+}
+
+.nav-group {
+    text-align: right;
+    margin-right: 20px;
+}
+
+.nav {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.nav a {
+    color: #FCA46E;
+    font-size: 36px;
+}
+
+.my-photo {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    text-align: center;
+}
+
+.my-photo img {
+    border-radius: 50%;
+}
+
+.my-photo p {
+    padding-top: 10px;
+    color: #FCA46E;
+    font-size: 26px;
+}
+
+.my-photo i {
+    font-size: 40px;
+    position: absolute;
+    top: 107%;
+    left: 95%;
+    color: #FCA46E;
+}
+
+/****************************************
+* ボディー　セクション
+*****************************************/
+.section {
+    position: relative;
+}
+
+.title {
+    height: 86px;
+    width: 100%;
+    background-color: rgba(255,147,0,0.08);
+    border-bottom: solid 2px rgba(255,147,0,0.4);
+}
+
+.title i {
+    color: #FCA46E;
+    font-size: 55px;
+    margin-left: 80px;
+}
+
+/****************************************
+* About
+*****************************************/
+.about {
+    margin: 0 auto;
+    max-width: 1050px;
+    position: relative;
+}
+
+.image {
+    height: 500px;
+    width: 400px;
+    margin: 64px 0 80px 30px;
+}
+
+.image img {
+    box-shadow: 10px 10px 10px 0 rgba(0,0,0,.5);
+}
+
+.profile {
+    width: 500px;
+    position: absolute;
+    height: 500px;
+    top: 0;
+    right: 0;
+    margin-right: 30px;
+    font-size: 26px;
+}
+
+.pro-section {
+    margin: 10px 0;
+}
+
+.pro-section h1 {
+    display: inline-block;
+    text-align: center;
+}
+
+.pro-title {
+    color: #FCA46E;
+    width: 180px;
+}
+
+.profile-title {
+    display: inline-block;
+    text-align: center;
+    border-bottom: solid 1px #FCA46E;
+    color: #FCA46E;
+    margin: 0 0 10px 30px;
+}
+
+.pro-contents {
+    font-size: 22px;
+    padding-left: 50px;
+    margin: 5px 0;
+}
+
+.history {
+    margin: 10px 0 20px 0;
+}
+
+/****************************************
+* Service
+*****************************************/
+.service {
+    margin: 20px auto;
+    max-width: 900px;
+}
+.service h1 {
+    font-size: 30px;
+}
+.service p {
+    font-size: 24px;
+}
+.service i {
+    font-size: 18px;
+}
+.price {
+    margin: 20px 0 10px 0;
+}
+.price h1, i {
+    display: inline-block;
+}
+.price p {
+    padding-left: 50px;
+}
+.service-contents {
+    margin: 10px 0;
+}
+.service-contents i, .responsive, .follow {
+    display: inline-block;
+}
+.service-contents p, .deadline p, .cautions p {
+    margin: 5px 0;
+    padding-left: 50px;
+}
+.cautions {
+    margin-bottom: 10px;
+}
+
+/****************************************
+* Works
+*****************************************/
+.sub-section {
+    margin: 20px auto;
+    max-width: 1200px;
+}
+.result {
+    display: inline-block;
+    margin: 20px 10px;
+    width: 30%;
+}
+.result img {
+    width: 100%;
+    border: solid 1px #707070;
+    object-fit: cover;
+}
+.result p {
+    width: 30%;
+    margin: 0 auto;
+    color: #000000;
+}
+
+/****************************************
+* Contact
+*****************************************/
+.contact {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.contact img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 30px 0 0 30px;
+    float: left;
+}
+.sub-contact {
+    display: inline-block;
+    clear: both;
+    margin: 50px 0 30px 30px;
+    font-size: 24px;
+}
+.sub-contact p {
+    margin: 5px 0;
+}
