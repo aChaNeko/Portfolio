@@ -107,6 +107,12 @@ table {
     color: #FCA46E;
 }
 
+@media screen and (max-width:480px) {
+    .nav-group {
+        display: none;
+    }
+}
+
 /****************************************
 * ボディー　セクション
 *****************************************/
@@ -125,6 +131,12 @@ table {
     color: #FCA46E;
     font-size: 55px;
     margin-left: 80px;
+}
+
+@media screen and (max-width: 480px) {
+    .title i {
+        margin-left: 20px;
+    }
 }
 
 /****************************************
@@ -149,7 +161,6 @@ table {
 .profile {
     width: 500px;
     position: absolute;
-    height: 500px;
     top: 0;
     right: 0;
     margin-right: 30px;
@@ -188,6 +199,34 @@ table {
     margin: 10px 0 20px 0;
 }
 
+@media screen and (max-width:480px) {
+    .profile {
+        width: 100%;
+    }
+    .image {
+        margin: 30px auto;
+        width: 300px;
+        height: 400px;
+    }
+    .profile {
+        position: static;
+        font-size: 20px;
+    }
+    .pro-title {
+        width: 120px;
+    }
+    .pro-section {
+        width: 90%;
+        margin: 5px auto;
+    }
+    .pro-contents {
+        font-size: 16px;
+        padding-left: 40px;
+    }
+    .skills {
+        margin-bottom: 20px;
+    }
+}
 /****************************************
 * Service
 *****************************************/
@@ -226,7 +265,27 @@ table {
 .cautions {
     margin-bottom: 10px;
 }
-
+@media screen and (max-width:480px) {
+    .price, .service-contents, .deadline, .cautions {
+        margin-left: 15px;
+    }
+    .service h1 {
+        font-size: 20px;
+    }
+    .service p {
+        font-size: 16px;
+    }
+    .service i {
+        font-size: 14px;
+    }
+    .price p, .service-contents p, .service-contents i, .deadline p, .cautions p {
+        padding-left: 20px;
+    }
+    .sp_br::before {
+        content: "\A";
+        white-space: pre;
+    }
+}
 /****************************************
 * Works
 *****************************************/
@@ -248,6 +307,22 @@ table {
     width: 30%;
     margin: 0 auto;
     color: #000000;
+}
+@media screen and (max-width:480px) {
+    .sub-section {
+        margin: 5px auto;
+        width: 90%;
+    }
+    .result {
+        width: 80%;
+        display: block;
+        margin: 20px auto;
+    }
+    .result p {
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+    }
 }
 
 /****************************************
@@ -272,4 +347,17 @@ table {
 }
 .sub-contact p {
     margin: 5px 0;
+}
+@media screen and (max-width:480px) {
+    .contact {
+        text-align: center;
+    }
+    .sub-contact {
+        margin: 0 0 20px 0;
+        font-size: 14px;
+    }
+    .contact img {
+        float: none;
+        margin: 20px auto;
+    }
 }

@@ -62,14 +62,14 @@
         </div>
         <div class="deadline">
             <h1>納期</h1>
-            <p>作業量につき変動しますが、受注後1週間〜2週間ほど頂きます。</p>
-            <p>ご希望の納期がございましたらお申し付けください。</p>
+            <p>作業量につき変動しますが、<span class="sp_br">受注後1週間〜2週間ほど頂きます。</span></p>
+            <p>ご希望の納期がございましたら<span class="sp_br">お申し付けください。</span></p>
         </div>
         <div class="cautions">
             <h1>ご依頼にあたっての注意事項</h1>
-            <p>デザインカンプはphotoshop・Illustrator・XD・画像ファイルなんでも結構です。</p>
-            <p>サイトに使用する画像素材は全てお客様でご用意して頂きます。</p>
-            <p>その他ご不明点・ご要望ありましたらお気軽にお問い合わせください。</p>
+            <p>デザインカンプはphotoshop・Illustrator・XD・画像ファイル<span class="sp_br">なんでも結構です。</span></p>
+            <p>サイトに使用する画像素材は<span class="sp_br">全てお客様でご用意して頂きます。</span></p>
+            <p>その他ご不明点・ご要望ありましたら<span class="sp_br">お気軽にお問い合わせください。</span></p>
         </div>
     </div>
 </div>
@@ -108,8 +108,7 @@
     <div class="title">
         <i class="ff_cursive">Contact</i>
     </div>
-    <div class="contact">
-        <img src="<?php bloginfo('template_url'); ?>/img/IMG_1150.JPG" alt="">
+    <div class="contact"><img src="<?php bloginfo('template_url'); ?>/img/IMG_1150.JPG" alt="">
         <div class="sub-contact">
             <p>名前：三ツ矢 昂平</p>
             <p>メールアドレス：chaneko914@icloud.com</p>
