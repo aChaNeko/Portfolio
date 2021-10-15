@@ -2,11 +2,13 @@
 
 <div class="section" id="about">
     <div class="title">
-        <i class="ff_cursive">About</i>
+        <i class="ff_cursive wow fadeInRight">About</i>
     </div>
     <div class="about">
-        <div class="image">
-            <img src="<?php bloginfo('template_url'); ?>/img/baseball.jpg" alt="">
+        <div class="image" id="profile">
+                <div><img id="" src="<?php bloginfo('template_url'); ?>/img/baseball.jpg" alt=""></div>
+                <div><img id="" src="<?php bloginfo('template_url'); ?>/img/cat.jpeg" alt=""></div>
+                <div><img id="" src="<?php bloginfo('template_url'); ?>/img/snowboard.jpg" alt=""></div>
         </div>
         <div class="profile ff_serif">
             <div class="pro-section">
@@ -41,7 +43,7 @@
 </div>
 <div class="section" id="service">
     <div class="title">
-        <i class="ff_cursive">Service</i>
+        <i class="ff_cursive wow fadeInRight">Service</i>
     </div>
     <div class="service ff_serif">
         <div class="price">
@@ -75,38 +77,38 @@
 </div>
 <div class="section" id="works">
     <div class="title">
-        <i class="ff_cursive">Works</i>
+        <i class="ff_cursive wow fadeInRight">Works</i>
     </div>
-    <div class="sub-section ff_serif">
+    <div class="sub-section ff_serif slider">
         <a href="">
             <div class="result">
-                <img src="<?php bloginfo('template_url'); ?>/img/No-Image.png" alt="">
-                <p>丸富庵清月様</p>
+                <img class="" src="<?php bloginfo('template_url'); ?>/img/No-Image.png" alt="">
+                <p>実績がありません</p>
             </div>
         </a>
         <a href="">
             <div class="result">
                 <img src="<?php bloginfo('template_url'); ?>/img/No-Image.png" alt="">
-                <p>丸富庵清月様</p>
+                <p>実績がありません</p>
             </div>
         </a>
         <a href="">
             <div class="result">
                 <img src="<?php bloginfo('template_url'); ?>/img/No-Image.png" alt="">
-                <p>丸富庵清月様</p>
+                <p>実績がありません</p>
             </div>
         </a>
         <a href="">
             <div class="result">
                 <img src="<?php bloginfo('template_url'); ?>/img/No-Image.png" alt="">
-                <p>丸富庵清月様</p>
+                <p>実績がありません</p>
             </div>
         </a>
     </div>
 </div>
 <div class="section" id="contact">
     <div class="title">
-        <i class="ff_cursive">Contact</i>
+        <i class="ff_cursive wow fadeInRight">Contact</i>
     </div>
     <div class="contact"><img src="<?php bloginfo('template_url'); ?>/img/IMG_1150.JPG" alt="">
         <div class="sub-contact">
