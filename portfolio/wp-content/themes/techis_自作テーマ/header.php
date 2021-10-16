@@ -39,7 +39,7 @@
 	<!-- モーダル -->
 	<div id="modal" class="modal"></div>
 	<div class="my-photo">
-		<img class="wow bounceIn" src="<?php bloginfo('template_url'); ?>/img/IMG_1150.JPG" alt="">
+		<img class="wow bounceIn" data-wow-delay="1s" data-wow-duration="2s" src="<?php bloginfo('template_url'); ?>/img/IMG_1150.JPG" alt="">
 		<p class="ff_cursive">@achaneko_914</p>
 		<a href=""><i class="fab fa-instagram"></i></a>
 	</div>

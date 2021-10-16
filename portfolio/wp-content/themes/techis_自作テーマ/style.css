@@ -183,6 +183,15 @@ table {
 /****************************************
 * About
 *****************************************/
+.shadow div {
+    width:400px;
+    height: 500px;
+    margin: 30px 0;
+    position: absolute;
+    box-shadow: 10px 10px 10px 0 rgba(0,0,0,.5);
+    margin: 0 0 0 30px;
+    
+}
 .about {
     margin: 0 auto;
     max-width: 1050px;
@@ -241,7 +250,6 @@ table {
     width: 100%;
     height: 500px;
     object-fit: cover;
-    box-shadow: 10px 10px 10px 0 rgba(0,0,0,.5);
 }
 
 @media screen and (max-width:480px) {
@@ -270,6 +278,18 @@ table {
     }
     .skills {
         margin-bottom: 20px;
+    }
+    .shadow{
+        display: flex;
+        justify-content: center;
+    }
+    .shadow div {
+        width:300px;
+        height: 400px;
+        margin: 30px 0;
+        position: absolute;
+        box-shadow: 10px 10px 10px 0 rgba(0,0,0,.5);
+        
     }
     /* slick設定 */
     #profile img {

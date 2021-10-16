@@ -5,10 +5,13 @@
         <i class="ff_cursive wow fadeInRight">About</i>
     </div>
     <div class="about">
+        <div class="shadow">
+            <div></div>
+        </div>
         <div class="image" id="profile">
-                <div><img id="" src="<?php bloginfo('template_url'); ?>/img/baseball.jpg" alt=""></div>
-                <div><img id="" src="<?php bloginfo('template_url'); ?>/img/cat.jpeg" alt=""></div>
-                <div><img id="" src="<?php bloginfo('template_url'); ?>/img/snowboard.jpg" alt=""></div>
+            <div><img id="" src="<?php bloginfo('template_url'); ?>/img/baseball.jpg" alt=""></div>
+            <div><img id="" src="<?php bloginfo('template_url'); ?>/img/cat.jpeg" alt=""></div>
+            <div><img id="" src="<?php bloginfo('template_url'); ?>/img/snowboard.jpg" alt=""></div>
         </div>
         <div class="profile ff_serif">
             <div class="pro-section">
@@ -110,7 +113,8 @@
     <div class="title">
         <i class="ff_cursive wow fadeInRight">Contact</i>
     </div>
-    <div class="contact"><img src="<?php bloginfo('template_url'); ?>/img/IMG_1150.JPG" alt="">
+    <div class="contact">
+        <img class="wow rollIn" data-wow-offset="50" data-wow-duration="3s" src="<?php bloginfo('template_url'); ?>/img/IMG_1150.JPG" alt="">
         <div class="sub-contact">
             <p>名前：三ツ矢 昂平</p>
             <p>メールアドレス：chaneko914@icloud.com</p>
