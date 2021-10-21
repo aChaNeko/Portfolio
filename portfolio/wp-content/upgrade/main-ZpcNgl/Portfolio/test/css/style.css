@@ -1,0 +1,13 @@
+.hello {
+    color: #FCA46E;
+    width: 300px;
+    border: solid 1px black;
+    text-align: center;
+}
+
+.test {
+    width: 300px;
+    height: 400px;
+    border: solid 1px black;
+    box-shadow: 10px 10px 10px 0 rgba(0,0,0,.5);
+}

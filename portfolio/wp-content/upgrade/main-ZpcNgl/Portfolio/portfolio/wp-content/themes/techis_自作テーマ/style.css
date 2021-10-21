@@ -1,0 +1,444 @@
+/****************************************
+* リセットCSS
+*****************************************/
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,
+abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike,
+strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table,
+caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	font-size: 100%;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	letter-spacing: 1.5px;
+	line-height: 1.5;
+}
+img {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+}
+a {
+	text-decoration: none;
+}
+ol, ul {
+	list-style: none;
+}
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+/****************************************
+* フォント設定
+*****************************************/
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Shippori+Mincho&display=swap');
+/* 筆記体 */
+.ff_cursive {
+    font-family: 'Bonheur Royale', cursive;
+}
+/* 明朝体 */
+.ff_serif {
+    font-family: 'Shippori Mincho', serif;
+}
+
+
+/****************************************
+* ヘッダー
+*****************************************/
+.background-photo {
+    background-image: url(http://localhost/portfolio/wp-content/themes/techis_自作テーマ/img/paint2.jpeg);
+    height: 480px;
+    width: 100%;
+    position: relative;
+}
+
+.nav-group {
+    text-align: right;
+    margin-right: 20px;
+}
+
+.nav a {
+    color: #FCA46E;
+    font-size: 36px;
+}
+
+.my-photo {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    text-align: center;
+}
+
+.my-photo img {
+    border-radius: 50%;
+}
+
+.my-photo p {
+    padding-top: 10px;
+    color: #FCA46E;
+    font-size: 26px;
+}
+
+.my-photo i {
+    font-size: 40px;
+    position: absolute;
+    top: 107%;
+    left: 95%;
+    color: #FCA46E;
+}
+
+.nav {
+    display: inline-block;
+    margin: 0 20px;
+}
+.hamburger {
+    display: none;
+    width: 40%;
+    height: 100vh;
+    background-color: #ffffffdd;
+    border-left: solid 1px #FCA46E;
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 20px;
+}
+.hamburger_btn {
+    display: none;
+    text-align: right;
+    font-size: 30px;
+    padding: 10px 20px;
+    color: #FCA46E;
+}
+.hamburger_btn:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width:480px) {
+    .nav-group {
+        margin-right: 0;
+    }
+    .nav {
+        display: block;
+        text-align: center;
+        margin: 20px auto;
+    }
+    .modal {
+        display: none;
+        background-color: #000000aa;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 9998;
+    }
+    .hamburger_btn {
+        display: block;
+    }
+}
+
+/****************************************
+* ボディー　セクション
+*****************************************/
+.section {
+    position: relative;
+}
+
+.title {
+    height: 86px;
+    width: 100%;
+    background-color: rgba(255,147,0,0.08);
+    border-bottom: solid 2px rgba(255,147,0,0.4);
+}
+
+.title i {
+    color: #FCA46E;
+    font-size: 55px;
+    margin-left: 80px;
+}
+
+@media screen and (max-width: 480px) {
+    .title i {
+        margin-left: 20px;
+    }
+}
+
+/****************************************
+* About
+*****************************************/
+.shadow div {
+    width:400px;
+    height: 500px;
+    margin: 30px 0;
+    position: absolute;
+    box-shadow: 10px 10px 10px 0 rgba(0,0,0,.5);
+    margin: 0 0 0 30px;
+    
+}
+.about {
+    margin: 0 auto;
+    max-width: 1050px;
+    position: relative;
+}
+
+.image {
+    height: 500px;
+    width: 400px;
+    margin: 64px 0 80px 30px;
+}
+
+.profile {
+    width: 500px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 30px;
+    font-size: 26px;
+}
+
+.pro-section {
+    margin: 10px 0;
+}
+
+.pro-section h1 {
+    display: inline-block;
+    text-align: center;
+}
+
+.pro-title {
+    color: #FCA46E;
+    width: 180px;
+}
+
+.profile-title {
+    display: inline-block;
+    text-align: center;
+    border-bottom: solid 1px #FCA46E;
+    color: #FCA46E;
+    margin: 0 0 10px 30px;
+}
+
+.pro-contents {
+    font-size: 22px;
+    padding-left: 50px;
+    margin: 5px 0;
+}
+
+.history {
+    margin: 10px 0 20px 0;
+}
+
+/* slick設定 */
+#profile img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+@media screen and (max-width:480px) {
+    .profile {
+        width: 100%;
+    }
+    .image {
+        margin: 30px auto;
+        width: 300px;
+        height: 400px;
+    }
+    .profile {
+        position: static;
+        font-size: 20px;
+    }
+    .pro-title {
+        width: 120px;
+    }
+    .pro-section {
+        width: 90%;
+        margin: 5px auto;
+    }
+    .pro-contents {
+        font-size: 16px;
+        padding-left: 40px;
+    }
+    .skills {
+        margin-bottom: 20px;
+    }
+    .shadow{
+        display: flex;
+        justify-content: center;
+    }
+    .shadow div {
+        width:300px;
+        height: 400px;
+        margin: 30px 0;
+        position: absolute;
+        box-shadow: 10px 10px 10px 0 rgba(0,0,0,.5);
+        
+    }
+    /* slick設定 */
+    #profile img {
+        height: 400px;
+    }
+}
+
+
+/****************************************
+* Service
+*****************************************/
+.service {
+    margin: 20px auto;
+    max-width: 900px;
+}
+.service h1 {
+    font-size: 30px;
+}
+.service p {
+    font-size: 24px;
+}
+.service i {
+    font-size: 18px;
+}
+.price {
+    margin: 20px 0 10px 0;
+}
+.price h1, i {
+    display: inline-block;
+}
+.price p {
+    padding-left: 50px;
+}
+.service-contents {
+    margin: 10px 0;
+}
+.service-contents i, .responsive, .follow {
+    display: inline-block;
+}
+.service-contents p, .deadline p, .cautions p {
+    margin: 5px 0;
+    padding-left: 50px;
+}
+.cautions {
+    margin-bottom: 10px;
+}
+@media screen and (max-width:480px) {
+    .price, .service-contents, .deadline, .cautions {
+        margin-left: 15px;
+    }
+    .service h1 {
+        font-size: 20px;
+    }
+    .service p {
+        font-size: 16px;
+    }
+    .service i {
+        font-size: 14px;
+    }
+    .price p, .service-contents p, .service-contents i, .deadline p, .cautions p {
+        padding-left: 20px;
+    }
+    .sp_br::before {
+        content: "\A";
+        white-space: pre;
+    }
+}
+/****************************************
+* Works
+*****************************************/
+
+/* slick設定 */
+.slick-prev:before, .slick-next:before {
+    color: #000;
+}
+.slider{
+    margin: 100px auto;
+    width: 80%;
+}
+.slider img{
+    height: auto;
+    width: 100%;
+}
+.sub-section {
+    margin: 20px auto;
+    max-width: 1200px;
+}
+.result {
+    margin: 0 10px;
+    text-align: center;
+}
+.result img {
+    border: solid 1px #707070;
+    object-fit: cover;
+}
+.result p {
+    width: 50%;
+    margin: 0 auto;
+    color: #000000;
+}
+@media screen and (max-width:480px) {
+    .sub-section {
+        margin: 5px auto;
+    }
+    .result {
+        width: 80%;
+        display: block;
+        margin: 20px auto;
+    }
+    .result p {
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+    }
+}
+
+/****************************************
+* Contact
+*****************************************/
+.contact {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.contact img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 30px 0 0 30px;
+    float: left;
+}
+.sub-contact {
+    display: inline-block;
+    clear: both;
+    margin: 50px 0 30px 30px;
+    font-size: 24px;
+}
+.sub-contact p {
+    margin: 5px 0;
+}
+@media screen and (max-width:480px) {
+    .contact {
+        text-align: center;
+    }
+    .sub-contact {
+        margin: 0 0 20px 0;
+        font-size: 14px;
+    }
+    .contact img {
+        float: none;
+        margin: 20px auto;
+    }
+}
