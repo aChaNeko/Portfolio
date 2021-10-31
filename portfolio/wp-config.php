@@ -26,7 +26,7 @@
 
 // ** MySQL 設定 - この情報はホスティング先から入手してください。 ** //
 /** WordPress のためのデータベース名 */
-define( 'DB_NAME', 'achaneko914_wp2' );
+define( 'DB_NAME', 'portfolio' );
 
 /** MySQL データベースのユーザー名 */
 define( 'DB_USER', 'root' );

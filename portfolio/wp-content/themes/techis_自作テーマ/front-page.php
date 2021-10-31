@@ -5,9 +5,9 @@
         <i class="ff_cursive wow fadeInRight">About</i>
     </div>
     <div class="about">
-        <div class="shadow">
+        <!-- <div class="shadow">
             <div></div>
-        </div>
+        </div> -->
         <div class="image" id="profile">
             <div><img id="" src="<?php bloginfo('template_url'); ?>/img/baseball.jpg" alt=""></div>
             <div><img id="" src="<?php bloginfo('template_url'); ?>/img/cat.jpeg" alt=""></div>
